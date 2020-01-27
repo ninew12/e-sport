@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/AIS-eSports_Logo 1.png">
+    <title>AIS-eSports</title>
+    <!-- <link rel="canonical" href="https://www.wrappixel.com/templates/materialpro/" /> -->
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid h-xl-100">
+        <div class="row">
+            <div class="col-12" id="card-box">
+                <img src="assets/images/AIS-eSports_Logo 1.png">
+            </div>
+            <div class="col-xl-6 offset-xl-3 col-lg-6  offset-lg-3 col-md-6 offset-md-3 col-sm-12  my-auto">
+
+                <!-- otp modal content -->
+                <div id="otp-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="text-center mt-2 mb-4">
+                                 <h2>Enter OTP</h2>
+                                 <p>Please Enter the OTP Send to your Mobile Number.</p>
+                                </div>
+
+                                <form class="form-material pl-3 pr-3" action="#">
+
+                                    <div class="form-group ">
+                                            <input id= "test" type="text" class="form-control form-control-line" placeholder="Enter OTP">
+                                    </div>
+                                    <div class="col-md-12 row d-flex justify-content-between ">
+                                        <p>Did not Received OTP?</p>
+                                        <a href="#" class="text-blue"><i class="fas fa-undo"></i> Resend OTP</a>
+                                    </div>
+                                    
+
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-success waves-effect waves-light mr-2" type="submit">SUBMIT</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+                <!-- Button -->
+                <div class="btn-list col text-center">
+                    <!-- Custom width modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#otp-modal" onclick="clearForm()">OTP
+                        MODAL</button>
+                </div>
+            </div> <!-- end col-->
+        </div>
+    </div>
+    </div>
+    <script>
+            function clearForm (){
+                document.getElementById("cleardata").value = "";
+            }
+        </script>
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/plugins/popper/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ============================================================== -->
+    <script src="js/jasny-bootstrap.js"></script>
+
+</body>
+
+</html>

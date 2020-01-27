@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/AIS-eSports_Logo 1.png">
+    <title>AIS-eSports</title>
+    <!-- <link rel="canonical" href="https://www.wrappixel.com/templates/materialpro/" /> -->
+    <!-- Date picker plugins css -->
+    <link href="assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid h-xl-100">
+        <div class="row">
+            <div class="col-12" id="card-box">
+                <img src="assets/images/AIS-eSports_Logo 1.png">
+            </div>
+            <div class="col-xl-6 offset-xl-3 col-lg-8  offset-lg-2 col-md-10 offset-md-1 col-sm-12  my-auto">
+                <div class="card ">
+                    <div class="card-body card-box">
+                        <h2 class="card-title text-dark text-center">Register</h2>
+                        <form class="form-material mt-4 row">
+                            <div class="form-group col-md-6 col-sm-12 mt-3">
+                                <label>ID CARD</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Number"
+                                    onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));">
+                                <label class="pt-4">FIRST NAME</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Text">
+                                <label class="pt-4">LAST NAME</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Text">
+                                <label class="pt-4">NICKNAME</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Text">
+                                <label class="pt-4">PHONE NUMBER</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Number"
+                                    onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));">
+                                <label class="pt-4">BIRTHDAY</label>
+                                <div class='input-group mb-3 '>
+                                    <input id="date" type='text' class="form-control " data-provide="datepicker"
+                                        data-date-format="dd/mm/yyyy" data-date-end-date="0d"
+                                        placeholder="dd/mm/yyyy" />
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">
+                                            <span class="ti-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-sm-12 mt-3">
+                                <label>GENDER</label>
+                                <div class="demo-radio-button row pl-2">
+                                    <input name="group5" type="radio" id="radio_30" class="with-gap radio-col-purple"
+                                        checked />
+                                    <label for="radio_30">Male</label>
+                                    <input name="group5" type="radio" id="radio_31" class="with-gap radio-col-purple" />
+                                    <label for="radio_31">Female</label>
+                                    <input name="group5" type="radio" id="radio_32" class="with-gap radio-col-purple" />
+                                    <label for="radio_32">Other</label>
+                                    <input name="group5" type="radio" id="radio_33"
+                                        class="with-gap radio-col-deep-purple" />
+                                </div>
+                                <label class="pt-3">ADDRESS</label>
+                                <input type="text" class="form-control form-control-line" placeholder="Input Text">
+                                <label class="pt-4">PROVINCE</label>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <label>CITY</label>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <label>DISTRICT</label>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <label>ZIPCODE</label>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </form>
+                        <div id="submit" class="col text-center">
+                            <button class="btn btn-success waves-effect waves-light mr-2">Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $.fn.datepicker.defaults.format = "dd/mm/yyyy";
+            $('.datepicker').datepicker()
+        })
+    </script>
+
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="assets/plugins/popper/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <script src="assets/plugins/moment/moment.js"></script>
+    <!-- Date Picker Plugin JavaScript -->
+    <script src="assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- ============================================================== -->
+    <script src="js/jasny-bootstrap.js"></script>
+
+</body>
+
+</html>
